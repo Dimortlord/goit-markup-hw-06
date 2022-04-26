@@ -378,6 +378,178 @@ img {
   fill: #000000;
 }
 
+.backdrop-form {
+  padding: 40px;
+}
+
+.backdrop-text-main {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 12px;
+}
+
+.name-tittle {
+  display: flex;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  color: var(--primary-text-color);
+  margin-bottom: 4px;
+}
+
+.in-name {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 35px;
+}
+
+.backdrop-name {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.icon-label1 {
+  top: 27px;
+  left: 14px;
+  position: absolute;
+}
+
+.phone-tittle {
+  display: flex;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  color: var(--primary-text-color);
+  margin-bottom: 4px;
+}
+
+.in-phone {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 35px;
+}
+
+.backdrop-phone {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.icon-label2 {
+  top: 27px;
+  left: 14px;
+  position: absolute;
+}
+
+.email-tittle {
+  display: flex;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  color: var(--primary-text-color);
+  margin-bottom: 4px;
+}
+
+.in-email {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 35px;
+}
+
+.backdrop-mail {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.icon-label3 {
+  top: 27px;
+  left: 14px;
+  position: absolute;
+}
+
+.backdrop-comments {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.comments-tittle {
+  display: flex;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  color: var(--primary-text-color);
+  margin-bottom: 4px;
+}
+
+.text-feed {
+  display: block;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+}
+
+.agreement {
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.checkbox-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.checkbox-url {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(33, 150, 243, 1);
+}
+
+.btn-sumbit {
+  width: 200px;
+  height: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.85;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--primary-backgroung-color);
+}
+
 /*-------------------------------Icons for feautures------------------------*/
 
 .box-item {
@@ -702,6 +874,10 @@ img {
   margin-right: 0px;
 }
 
+.social-network-icons {
+  margin-right: 93px;
+}
+
 .logo-white {
   display: block;
   margin-bottom: 20px;
@@ -769,6 +945,55 @@ img {
 .section-network-number:hover,
 .section-network-number:focus {
   color: var(--accent-color);
+}
+
+.contact-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--primary-backgroung-color);
+  margin-bottom: 20px;
+}
+
+.email-label {
+  display: flex;
+}
+
+/* .third-box {
+  display: flex;
+  align-items: center;
+} */
+
+.btn-connect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.85;
+  width: 200px;
+  height: 50px;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 1);
+  /* margin-right: 10px; */
+}
+
+.third-form-icon {
+  margin-left: 10px;
+}
+
+.email-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 12px;
+  background-color: rgba(47, 48, 58, 1);
 }
 
 /*---------------------Портфолио----------------------------------*/
