@@ -618,6 +618,9 @@ img {
 .checkbox-in:checked + .icon-submit {
   background-color: var(--accent-color);
   border-color: transparent;
+  border: 2px solid var(--accent-color);
+  border: 0;
+  border-radius: 2px;
 }
 
 .btn-submit {
