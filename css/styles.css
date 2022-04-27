@@ -379,11 +379,17 @@ img {
   fill: var(--accent-color);
 }
 
+.backdrop-button:hover .icon-close {
+  fill: var(--accent-color);
+}
+
 .icon-close {
   fill: #000000;
 }
 
 .backdrop-form {
+  margin-left: auto;
+  margin-right: auto;
   padding: 40px;
 }
 
@@ -604,6 +610,11 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.checkbox-in {
+  display: flex;
+}
+
 .checkbox-in:checked + .icon-submit {
   background-color: var(--accent-color);
   border-color: transparent;
