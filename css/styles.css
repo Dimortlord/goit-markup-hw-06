@@ -372,6 +372,11 @@ img {
   cursor: pointer;
   background-color: transparent;
   border-color: rgba(0, 0, 0, 0.1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-button:focus .icon-close {
+  fill: var(--accent-color);
 }
 
 .icon-close {
@@ -410,6 +415,16 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 35px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.in-name:focus + .icon-label1 {
+  fill: var(--accent-color);
+}
+
+.in-name:focus {
+  border-color: var(--accent-color);
 }
 
 .backdrop-name {
@@ -422,6 +437,7 @@ img {
   top: 27px;
   left: 14px;
   position: absolute;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .phone-tittle {
@@ -442,6 +458,16 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 35px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.in-phone:focus + .icon-label2 {
+  fill: var(--accent-color);
+}
+
+.in-phone:focus {
+  border-color: var(--accent-color);
 }
 
 .backdrop-phone {
@@ -454,6 +480,7 @@ img {
   top: 27px;
   left: 14px;
   position: absolute;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .email-tittle {
@@ -474,6 +501,16 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 35px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.in-email:focus + .icon-label3 {
+  fill: var(--accent-color);
+}
+
+.in-email:focus {
+  border-color: var(--accent-color);
 }
 
 .backdrop-mail {
@@ -486,6 +523,7 @@ img {
   top: 27px;
   left: 14px;
   position: absolute;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop-comments {
@@ -512,11 +550,17 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   resize: none;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-feed:focus {
+  border-color: var(--accent-color);
 }
 
 .agreement {
-  display: block;
-  position: relative;
+  display: flex;
+  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -526,6 +570,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-right: 4px;
 }
 
 .checkbox-url {
@@ -534,9 +579,27 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(33, 150, 243, 1);
+  text-decoration: underline;
 }
 
-.btn-sumbit {
+.icon-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: solid 2px var(--secondary-logo-color);
+  margin-right: 7px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox-in:checked + .icon-submit {
+  background-color: var(--accent-color);
+  border-color: transparent;
+}
+
+.btn-submit {
   width: 200px;
   height: 50px;
   font-style: normal;
@@ -548,6 +611,12 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--primary-backgroung-color);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+  background: #188ce8;
 }
 
 /*-------------------------------Icons for feautures------------------------*/
